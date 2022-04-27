@@ -1,0 +1,15 @@
+syntax = "proto3";
+package example.empl_curd.rpc;
+import "empl_curd.proto";
+
+service SimpleCrudService {
+    rpc create (example.empl_curd.CreateRequest) returns (example.empl_curd.Response);
+    rpc get (example.empl_curd.getsalary) returns (example.empl_curd.ListResponse);
+    
+
+
+   
+  
+ 
+
+}

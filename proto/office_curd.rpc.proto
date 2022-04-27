@@ -1,0 +1,14 @@
+syntax = "proto3";
+package example.office_curd.rpc;
+import "office_curd.proto";
+
+service SimpleCrudService2 {
+    rpc create (example.office_curd.CreateRequest) returns (example.office_curd.Response);
+    rpc get (example.office_curd.Empty) returns (example.office_curd.ListResponse);
+    rpc get_id (example.office_curd.GetRequest) returns (example.office_curd.specificResponse);
+    rpc get_officedetails (example.office_curd.Empty) returns (example.office_curd.listname);
+    rpc get_pos (example.office_curd.GetRequests) returns (example.office_curd.posdetail);
+
+
+
+}

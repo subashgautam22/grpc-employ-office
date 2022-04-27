@@ -1,0 +1,48 @@
+syntax = "proto3";
+package example.empl_curd;
+
+message CreateRequest {
+     string first_name = 1;
+     string last_name =2;
+     string email= 3;
+     string salary=4;
+     string swiftpost=5;
+     string dep_ids=6;
+    
+
+  
+
+
+}
+message Details {
+    string first_name= 1;
+    string last_name =2;
+    string swiftpost= 3;
+    string dep_name= 4;
+    string salary =5;
+   
+}
+
+
+
+message ListResponse {
+repeated Details dataList = 1; 
+Response response=2;
+}
+
+
+message getsalary {
+string first_name=1;
+string salary=2;
+}
+
+
+
+
+
+
+message Response {
+    int32 status = 1;
+    string message = 2;
+}
+
